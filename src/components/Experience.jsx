@@ -6,20 +6,17 @@ function Experience() {
       <div className="container">
         <h2 className="section-title">Experience</h2>
         <div className="experience-item">
-          <h3 className="job-title">ServiceNow Developer</h3>
-          <p className="company">Tata Consultancy Services (TCS)</p>
-          <p className="duration">~2.5 years</p>
+          <h3 className="job-title">Senior ServiceNow Developer</h3>
+          <p className="company">Tata Consultancy Services, Mumbai</p>
+          <p className="duration">Aug 2023 – Present</p>
           <ul className="responsibilities">
-            <li>Developed custom Service Portal widgets to enhance user experience and streamline service delivery</li>
-            <li>Proficient in scripting using JavaScript and Glide APIs for business logic implementation</li>
-            <li>Configured and maintained Flow Designer, Import Sets, and Transform Maps for data automation</li>
-            <li>Implemented integrations with third-party systems using REST/SOAP APIs</li>
-            <li>Designed and managed data models and CMDB for effective configuration management</li>
-            <li>Optimized attachment handling and performance for improved system efficiency</li>
-            <li>Conducted requirement analysis and translated business needs into technical solutions</li>
-            <li>Troubleshot and resolved complex platform issues</li>
-            <li>Ensured adherence to ServiceNow standards and best practices</li>
-            <li>Collaborated with cross-functional teams to deliver high-quality solutions</li>
+            <li>Developed and customized ServiceNow Customer Service Management (CSM) solutions for global enterprise client.</li>
+            <li>Designed and implemented enterprise integrations using REST APIs, Scripted REST APIs, JDBC, SFTP, and AWS services.</li>
+            <li>Built Flow Designer workflows and reusable Script Includes improving scalability and maintainability.</li>
+            <li>Customized Service Portal widgets and enhanced Workspace experiences using UI Builder.</li>
+            <li>Implemented enterprise attachment solution reducing ServiceNow storage dependency by 50%.</li>
+            <li>Delivered Proof-of-Concept solutions aligned with business requirements.</li>
+            <li>Resolved production issues and improved platform reliability and performance.</li>
           </ul>
         </div>
       </div>

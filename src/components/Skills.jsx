@@ -1,34 +1,46 @@
 import './Skills.css'
 
 function Skills() {
-  const skills = [
-    { name: "C++", level: "Advanced" },
-    { name: "C", level: "Advanced" },
-    { name: "Java", level: "Advanced" },
-    { name: "SQL", level: "Advanced" },
-    { name: "Data Structures", level: "Advanced" },
-    { name: "HTML", level: "Advanced" },
-    { name: "CSS", level: "Advanced" },
-    { name: "Python", level: "Intermediate" },
-    { name: "PHP", level: "Intermediate" },
-    { name: "C#", level: "Intermediate" },
-    { name: "Android", level: "Intermediate" },
-    { name: "JavaScript", level: "Intermediate" },
-    { name: "Linux/Shell", level: "Intermediate" },
-    { name: "ReactJS", level: "Beginner" },
-    { name: "Time Management", level: "Soft Skill" },
-    { name: "Fast Learner", level: "Soft Skill" }
+  const skillCategories = [
+    {
+      category: "ServiceNow",
+      skills: ["CSM", "ITSM", "Flow Designer", "UI Builder", "Workspace", "IntegrationHub"]
+    },
+    {
+      category: "Integrations",
+      skills: ["REST APIs", "Scripted REST APIs", "SOAP", "JDBC", "SFTP", "Amazon S3", "Amazon SQS"]
+    },
+    {
+      category: "Development",
+      skills: ["JavaScript", "Glide API", "Script Includes", "Business Rules", "Client Scripts"]
+    },
+    {
+      category: "Data",
+      skills: ["Import Sets", "Transform Maps", "JSON Processing"]
+    },
+    {
+      category: "Security",
+      skills: ["ACL", "Role-Based Access Control"]
+    },
+    {
+      category: "Tools",
+      skills: ["Platform Analytics", "Now Assist", "Logging", "Monitoring"]
+    }
   ]
 
   return (
     <section className="skills section" id="skills">
       <div className="container">
-        <h2 className="section-title">Skills</h2>
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-card">
-              <div className="skill-name">{skill.name}</div>
-              <div className="skill-level">{skill.level}</div>
+        <h2 className="section-title">Technical Skills</h2>
+        <div className="skills-categories">
+          {skillCategories.map((cat, index) => (
+            <div key={index} className="skill-category-card">
+              <h3 className="skill-category-name">{cat.category}</h3>
+              <div className="skill-tags">
+                {cat.skills.map((skill, i) => (
+                  <span key={i} className="skill-tag">{skill}</span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

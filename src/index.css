@@ -8,20 +8,46 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: #333;
-  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  background-color: var(--page-bg);
+
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-soft: #eff6ff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --page-bg: #f8fbff;
+  --card-bg: #ffffff;
+  --border: #dbeafe;
+  --shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--page-bg);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
