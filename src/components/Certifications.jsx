@@ -5,28 +5,42 @@ function Certifications() {
     {
       name: "Certified System Administrator (CSA)",
       issuer: "ServiceNow",
-      description: "ServiceNow System Administration certification"
+      description: "ServiceNow Certified System Administrator"
     },
     {
-      name: "Certified System Administrator Mainline (CSM)",
+      name: "Certified Implementation Specialist – CSM",
       issuer: "ServiceNow",
-      description: "ServiceNow Mainline System Administration certification"
+      description: "ServiceNow Certified Implementation Specialist – Customer Service Management"
     },
     {
-      name: "Advanced Certification in Full Stack Development",
-      issuer: "ICT Academy",
-      description: "Comprehensive full-stack development training covering modern web technologies"
+      name: "Micro Certification – Flow Designer",
+      issuer: "ServiceNow",
+      description: "ServiceNow Flow Designer Micro Certification"
     },
     {
-      name: "Advanced Certification in Cloud Computing",
-      issuer: "ICT Academy",
-      description: "Cloud computing fundamentals and advanced concepts"
+      name: "Micro Certification – UI Builder",
+      issuer: "ServiceNow",
+      description: "ServiceNow UI Builder Micro Certification"
     },
     {
-      name: "Salesforce Trailblazer",
-      issuer: "Salesforce",
-      description: "Active learning on Salesforce Trailhead platform",
-      link: "https://www.salesforce.com/trailblazer/ashuthoshpadmashali"
+      name: "Micro Certification – Platform Analytics",
+      issuer: "ServiceNow",
+      description: "ServiceNow Platform Analytics Micro Certification"
+    },
+    {
+      name: "Now Assist Executive Micro Certification",
+      issuer: "ServiceNow",
+      description: "ServiceNow Now Assist Executive Micro Certification"
+    },
+    {
+      name: "Agentic AI Executive Micro Certification",
+      issuer: "ServiceNow",
+      description: "ServiceNow Agentic AI Executive Micro Certification"
+    },
+    {
+      name: "Partner Sales Gen AI+ Accreditation",
+      issuer: "ServiceNow",
+      description: "ServiceNow Partner Sales Gen AI+ Accreditation"
     }
   ]
 
@@ -40,11 +54,6 @@ function Certifications() {
               <h3 className="cert-name">{cert.name}</h3>
               <p className="cert-issuer">{cert.issuer}</p>
               <p className="cert-description">{cert.description}</p>
-              {cert.link && (
-                <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-link">
-                  View Profile →
-                </a>
-              )}
             </div>
           ))}
         </div>

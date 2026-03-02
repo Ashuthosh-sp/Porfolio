@@ -14,14 +14,14 @@ function Contact() {
               <span className="contact-icon">📧</span>
               <div className="contact-details">
                 <h3>Email</h3>
-                <a href="mailto:ashuthoshpadmashali@gmail.com">ashuthoshpadmashali@gmail.com</a>
+              <a href="mailto:ashuthosh.s.p@gmail.com">ashuthosh.s.p@gmail.com</a>
               </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📱</span>
               <div className="contact-details">
                 <h3>Phone</h3>
-                <a href="tel:+919481772908">+91 9481772908</a>
+                <a href="tel:+917899968433">+91 7899968433</a>
               </div>
             </div>
             <div className="contact-item">
